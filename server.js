@@ -53,10 +53,10 @@ var articles =
         heading : 'Article three Heading',
         contents : `
             <p> This is article three
-            </p>`
+            </p>`,
         
     }
-};
+}};
 
 function createTemplate(data)
 {
