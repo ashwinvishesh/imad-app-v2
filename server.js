@@ -25,8 +25,8 @@ app.get('/:articlename', function (req, res) {
 app.get('/articletwo', function (req, res) {
   res.send('Hello World2');
 });
-var articles =
-{
+
+var articles = {
     'articleone' : {
         title : 'Article One',
         heading : 'Article Heading',
@@ -56,7 +56,7 @@ var articles =
             </p>`,
         
     }
-}};
+    };
 
 function createTemplate(data)
 {
