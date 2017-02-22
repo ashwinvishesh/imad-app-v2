@@ -17,28 +17,46 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/articleone', function (req, res) {
-  res.send(createTemplate(articleone));
+app.get('/:articlename', function (req, res) {
+    var articleName = req.params.articlename ;
+  res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/articletwo', function (req, res) {
   res.send('Hello World2');
 });
-
-var articleone = {
-    title : 'Article One',
-    heading : 'Article Heading',
-    contents : `
-        <p> This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article o
-        </p>
+var articles =
+{
+    var articleone = {
+        title : 'Article One',
+        heading : 'Article Heading',
+        contents : `
+            <p> This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article o
+            </p>
+            
+            <p> This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article o
+            </p>
+            
+            <p> This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article o
+            </p>`,
+    };
+    var articletwo = {
+        title : 'Article Two',
+        heading : 'Article two Heading',
+        contents : `
+            <p> This is article two
+            </p>`,
         
-        <p> This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article o
-        </p>
+    };
+    var articlethree = {
+        title : 'Article Three',
+        heading : 'Article three Heading',
+        contents : `
+            <p> This is article three
+            </p>`,
         
-        <p> This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article o
-        </p>`,
-};
-
+    };
+}
 function createTemplate(data)
 {
         var title =data.title;
