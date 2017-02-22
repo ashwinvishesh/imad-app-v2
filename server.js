@@ -38,7 +38,7 @@ var articles = {
             </p>
             
             <p> This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article o
-            </p>`.
+            </p>`
     },
     'articletwo' : {
         title : 'Article Two',
@@ -53,7 +53,7 @@ var articles = {
         heading : 'Article three Heading',
         contents : `
             <p> This is article three
-            </p>`,
+            </p>`
         
     }
     };
