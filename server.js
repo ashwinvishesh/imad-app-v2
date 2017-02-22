@@ -26,8 +26,8 @@ app.get('/articletwo', function (req, res) {
 });
 
 var articleone = {
-    title : 'Article One';
-    heading : 'Article Heading';
+    title : 'Article One',
+    heading : 'Article Heading',
     contents : `
         <p> This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article o
         </p>
@@ -36,8 +36,8 @@ var articleone = {
         </p>
         
         <p> This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article o
-        </p>`;
-}
+        </p>`,
+};
 
 function createTemplate(data)
 {
