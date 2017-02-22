@@ -27,7 +27,7 @@ app.get('/articletwo', function (req, res) {
 });
 var articles =
 {
-    var articleone = {
+    'articleone' : {
         title : 'Article One',
         heading : 'Article Heading',
         contents : `
@@ -38,25 +38,26 @@ var articles =
             </p>
             
             <p> This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article one .this is article one this must be artice one .This is article o
-            </p>`,
-    };
-    var articletwo = {
+            </p>`.
+    },
+    'articletwo' : {
         title : 'Article Two',
         heading : 'Article two Heading',
         contents : `
             <p> This is article two
-            </p>`,
+            </p>`
         
-    };
-    var articlethree = {
+    },
+    'articlethree' : {
         title : 'Article Three',
         heading : 'Article three Heading',
         contents : `
             <p> This is article three
-            </p>`,
+            </p>`
         
-    };
-}
+    }
+};
+
 function createTemplate(data)
 {
         var title =data.title;
